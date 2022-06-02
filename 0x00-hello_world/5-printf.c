@@ -3,8 +3,6 @@
 *
 *main - Entry point
 *
-*print string using printf
-*
 *Return: Always 0 (Success)
 */
 int main(void)
