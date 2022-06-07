@@ -1,4 +1,4 @@
-#include "school.h"
+#include "main.h"
 
 /**
  * main - Prints School
