@@ -44,7 +44,7 @@ if (i != 98)
 {
 printf(", ");
 }
-i++;
+i = i + 1;
 }
 printf("\n");
 return (0);
