@@ -10,7 +10,10 @@ void times_table(void)
 int i, j, prod;
 for (i = 0; i <= 9; i++)
 {
-for (j = 0; j <= 9; j++)
+_putchar('0');
+_putchar(',');
+_putchar(' ');
+for (j = 1; j <= 9; j++)
 {
 prod = i * j;
 if ((prod / 10) > 0)
