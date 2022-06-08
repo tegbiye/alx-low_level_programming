@@ -33,17 +33,11 @@ n = p;
 a0 = a1;
 a1 = sum;
 if (p >= 100)
-{
-printf("%lu%lu", sum, p);
-}
+	printf("%lu%lu", sum, p);
 else
-{
-printf("%lu0%lu", sum, p);
-}
+	printf("%lu0%lu", sum, p);
 if (i != 98)
-{
-printf(", ");
-}
+	printf(", ");
 i = i + 1;
 }
 printf("\n");
