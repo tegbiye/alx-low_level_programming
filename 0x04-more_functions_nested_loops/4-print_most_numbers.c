@@ -15,6 +15,10 @@ if (i != 50 && i != 53)
 {
 putchar(i);
 }
+else
+{
+continue;
+}
 }
 putchar('\n');
 }
