@@ -13,13 +13,18 @@
 
 void print_array(int *a, int n)
 {
-int i;
+int i, j;
 
-for (i = 0; i < (n - 1); i++)
+for (i = 0; i < n; i++)
 {
-printf("%d, ", a[i]);
+j = *(a + i);
+printf("%d", j);
+
+if (i != n - 1)
+{
+printf(", ");
 }
-printf("%d", a[n - 1]);
+}
 printf("\n");
 }
 
