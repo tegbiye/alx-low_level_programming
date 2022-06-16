@@ -18,7 +18,7 @@ i++;
 j++;
 }
 
-if ( i <= j)
+if (i <= j)
 {
 lim = i;
 }
@@ -27,7 +27,7 @@ else
 lim = j;
 }
 
-while ( k <= lim)
+while (k <= lim)
 {
 if (s1[k] == s2[k])
 {
