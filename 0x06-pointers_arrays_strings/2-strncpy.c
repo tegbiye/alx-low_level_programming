@@ -16,9 +16,10 @@ while (src[i])
 {
 i++;
 }
-for (; src[len] != '\0' && len < n; len++)
+while (src[len] && len < n)
 {
 dest[len] = src[len];
+len++;
 }
 while (len < n)
 {
