@@ -4,7 +4,7 @@
 
 /**
  * print_chessboard - a function that prints the chessboard
- * @a[8]: character array
+ * @a: character array
  *
  * Return: Nothing
  */
