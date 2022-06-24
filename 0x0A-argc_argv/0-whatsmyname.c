@@ -3,10 +3,9 @@
 /**
  * main - Write program that prints its name,
  * followed by new line
- * @argc - number of arguments
- * @argv - array of strings
+ *@argc: number of arguments
+ *@argv: array of strings
  * Return: 0 on Success
- *
  */
 
 int main(int argc, char *argv[])
