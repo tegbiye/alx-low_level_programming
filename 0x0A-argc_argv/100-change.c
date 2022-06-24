@@ -42,7 +42,7 @@ else
 }
 else
 	i = i - 1;
-count++;
+++count;
 }
 printf("%d\n", count);
 }
