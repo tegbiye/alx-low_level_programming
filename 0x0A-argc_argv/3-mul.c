@@ -31,7 +31,7 @@ else if (i == 2)
 b = atoi(argv[i]);
 }
 }
-prod = a*b;
+prod = a *b;
 printf("%d\n", prod);
 }
 return (0);
