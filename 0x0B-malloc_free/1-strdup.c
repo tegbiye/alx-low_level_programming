@@ -4,7 +4,7 @@
 #include <string.h>
 
 /**
- * _strup - function that returns a pointer to a newly allocated space
+ * _strdup - function that returns a pointer to a newly allocated space
  *@str: char
  *
  * Return: retunrs pointer to duplicated or NULL
