@@ -24,7 +24,7 @@ if (s2 == NULL)
 for (i = 0; s1[i]; i++)
 	len++;
 
-concat = malloc(sizeof(char) * (len));
+concat = malloc(sizeof(char) * (len + 1));
 
 if (concat == NULL)
 	return (NULL);
