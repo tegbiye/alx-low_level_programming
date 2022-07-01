@@ -3,24 +3,6 @@
 #include <stdio.h>
 #include <string.h>
 
-
-
-/**
- * find_len - Finds the length of a string.
- * @str: The string to be measured.
- *
- * Return: The length of the string.
- */
-int find_len(char *str)
-{
-int len = 0;
-
-while (*str++)
-	len++;
-
-return (len);
-}
-
 /**
  * create_xarray - Creates an array of chars and initializes it with
  *                 the character 'x'. Adds a terminating null byte.
@@ -98,7 +80,7 @@ void get_prod(char *prod, char *mult, int digit, int zeroes)
 {
 int mult_len, num, tens = 0;
 
-mult_len = find_len(mult) - 1;
+mult_len = strlen(mult) - 1;
 mult += mult_len;
 
 while (*prod)
@@ -204,11 +186,11 @@ printf("0\n");
 return (0);
 }
 
-size = find_len(argv[1]) + find_len(argv[2]);
+size = strlen(argv[1]) + strlen(argv[2]);
 final_prod = create_xarray(size + 1);
 next_prod = create_xarray(size + 1);
 
-for (index = find_len(argv[2]) - 1; index >= 0; index--)
+for (index = strlen(argv[2]) - 1; index >= 0; index--)
 {
 digit = get_digit(*(argv[2] + index));
 get_prod(next_prod, argv[1], digit, zeroes++);
