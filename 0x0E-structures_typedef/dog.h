@@ -1,17 +1,20 @@
-#include <stdio.h>
-#include <string.h>
-
 #ifndef _dog_h
 #define _dog_h
 
-typedef struct dog dog;
-struct dog
-{
-char* name;
-float age;
-char* owner;
+/**
+ * struct dog - such structure, wow
+ * @name: dog's name
+ * @age: dog's age
+ * @owner: dog's owner
+ */
 
-};
+typedef struct dog
+{
+char *name;
+float age;
+char *owner;
+
+} dog;
 
 
 #endif
