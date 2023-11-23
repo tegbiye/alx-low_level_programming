@@ -29,43 +29,6 @@ array[index] = '\0';
 
 return (array);
 }
-
-/**
- * iterate_zeroes - Iterates through a string of numbers containing
- *                  leading zeroes until it hits a non-zero number.
- * @str: The string of numbers to be iterate through.
- *
- * Return: A pointer to the next non-zero element.
- */
-char *iterate_zeroes(char *str)
-{
-while (*str && *str == '0')
-	str++;
-
-return (str);
-}
-
-/**
- * get_digit - Converts a digit character to a corresponding int.
- * @c: The character to be converted.
- *
- * Description: If c is a non-digit, the function
- *              exits with a status of 98.
- * Return: The converted int.
- */
-int get_digit(char c)
-{
-int digit = c - '0';
-
-if (digit < 0 || digit > 9)
-{
-printf("Error\n");
-exit(98);
-}
-
-return (digit);
-}
-
 /**
  * get_prod - Multiplies a string of numbers by a single digit.
  * @prod: The buffer to store the result.
