@@ -11,42 +11,63 @@ int *array_range(int min, int max);
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 int _putchar(char c);
 
-/**
- * get_digit - Converts a digit character to a corresponding int.
- * @c: The character to be converted.
- *
- * Description: If c is a non-digit, the function
- *              exits with a status of 98.
- * Return: The converted int.
- */
-int get_digit(char c)
-{
-int digit = c - '0';
-
-if (digit < 0 || digit > 9)
-{
-printf("Error\n");
-exit(98);
-}
-
-return (digit);
-}
+/*functions for 101-mul.c */
 
 /**
- * iterate_zeroes - Iterates through a string of numbers containing
- *                  leading zeroes until it hits a non-zero number.
- * @str: The string of numbers to be iterate through.
+ * error_exit - prints error with _putchar
+ *              and exits with 98
  *
- * Return: A pointer to the next non-zero element.
- */
-char *iterate_zeroes(char *str)
-{
-while (*str && *str == '0')
-	str++;
+ * Return: Error 98 and exit(98)
+*/
 
-return (str);
+int error_exit(void)
+{
+	char *err;
+	int i;
+
+	err = "Error";
+	for (i = 0; err[i] != '\0'; i++)
+		_putchar(err[i]);
+	_putchar('\n');
+	exit(98);
 }
 
+/**
+ * check_number - checks if string has only
+ *                numbers
+ *
+ * @str: string to check
+ *
+ * Return: 0 is true 1 if false
+*/
+
+int check_number(char *str)
+{
+	while (*str != '\0')
+	{
+		if (*str < '0' || *str > '9')
+			return (1);
+		str++;
+	}
+	return (0);
+}
+
+/**
+ * _length - get the length of strings
+ *
+ * @str: string to get length of
+ *
+ * Return: length of string
+*/
+
+int _length(char *str)
+{
+	int i = 0;
+
+	while (str[i] != '\0')
+		i++;
+	return (i);
+}
 
 
 #endif /* MAIN_H*/
