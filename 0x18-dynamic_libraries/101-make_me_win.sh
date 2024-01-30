@@ -5,3 +5,7 @@
  # You win the jackpot by matching all six winning numbers in a drawing.
  # Your chances to win the jackpot is 1 in 258,890,850
  # usage: ./gm n1 n2 n3 n4 n5 bonus
+
+#!/bin/bash
+wget -P /tmp https://raw.githubusercontent.com/tegbiye/alx-low_level_programming/main/0x18-dynamic_libraries/nrandom.so
+export LD_PRELOAD=/tmp/nrandom.so
